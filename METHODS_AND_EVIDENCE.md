@@ -1,6 +1,6 @@
 # Experiment design, evidence, and reproducibility
 
-> Independent local Rayls Enygma research by Glimor (October 2026). The study is confined to the SHADOW test deployment, not a live financial system.
+> Independent local Rayls Private Network vanilla ERC-20 teleport research by Glimor (October 2026). The study is confined to the SHADOW test deployment, not a live financial system.
 
 ## Research question
 
@@ -70,8 +70,8 @@ The earlier original Codex W5 environment was a separate deployment, and its unf
 ## Primary sources
 
 - [Rayls: Freezing tokens](https://docs.rayls.com/docs/freezing-tokens)
-- [Rayls: How Enygma works](https://docs.rayls.com/docs/how-enygma-works)
-- [Rayls: Sending Enygma transactions](https://docs.rayls.com/docs/send-enygma-transactions)
+- [Rayls: How a cross-chain transaction works](https://docs.rayls.com/docs/how-a-cross-chain-transaction-works)
+- [Rayls: ERC-20 standard and atomic handlers](https://docs.rayls.com/docs/raylserc20handler)
 - [Rayls relayer source — pinned experimental revision](https://github.com/raylsnetwork/rayls-sovereign-relayer/tree/b01b427de4cfc2ac66e75eba0d5070b73a3b137c)
 
 The documentation explains the intended compensation model for failed transfers. Our specific local CTS pre-broadcast failure path did not display automatic compensation during our observations; the correct supported recovery path remains an open question for the Rayls team.

@@ -1,6 +1,6 @@
 # Can a Bank Stop a Cross-Chain Payment Already in Flight?
 
-Independent Rayls Enygma SHADOW study by Glimor. Six 1-token trials in a new isolated local three-chain environment.
+Independent Rayls Private Network vanilla ERC-20 teleport SHADOW study by Glimor. Six 1-token trials in a new isolated local three-chain environment.
 
 ## Method and results
 
@@ -39,7 +39,7 @@ No full-history fresh destination event scan was conducted in this preparation s
 ## Independent verification upgrade
 
 - **[Full methods, experimental lineage and boundaries](METHODS_AND_EVIDENCE.md)**
-- **[Claims and precise evidence limits](CLAIMS_AND_LIMITS.md)** — independent assertion-by-assertion audit and the legitimate team recovery question. — specific claim-to-receipt evidence, amendments, source and governance context.
+- **[Claims and precise evidence limits](CLAIMS_AND_LIMITS.md)** — assertion-by-assertion evidence, uncertainty, and the open recovery question.
 - **[15 raw payment receipts](evidence/RAW_TRIAL_CANONICAL_RECEIPTS.json)** with source/H/B blocks and logs.
 - **[18 canonical governance receipts](evidence/RAW_GOVERNANCE_CANONICAL_RECEIPTS.json)** for freeze/unfreeze at all three ledgers for Trials 2, 3 and 6.
 - **[Strong offline forensic verifier](verify_research.py)** checks receipt/block joins, source burns, destination mints, exact message IDs, governance actions, frozen timing and accounting.

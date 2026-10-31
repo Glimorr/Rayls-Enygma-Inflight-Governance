@@ -1,6 +1,6 @@
 # Evidence-to-claim matrix
 
-Independent local Rayls Enygma SHADOW study (October 2026). **This is not a production security assessment.**
+Independent local Rayls Private Network vanilla ERC-20 SHADOW study (October 2026). **This is not a production security assessment.**
 
 | Scientific claim | Highest-strength available evidence | What is *not* established |
 |---|---|---|
@@ -32,13 +32,13 @@ The secondary question of approved compensation or same-reference settlement aft
 
 ## Open technical question for the Rayls maintainers
 
-> For an Enygma `crosschain.vanilla` transfer whose source burn and Hub transaction already succeeded, if Bank B CTS rejects delivery before broadcasting a destination transaction with `MessageFailure(RaylsApp__PrivacyNodeFrozen)`, which native component is expected to initiate same-reference compensation, and what is the supported recovery procedure after governance is restored? In three controlled local trials, no automatic credit or refund was observed.
+> For a standard ERC-20 `crosschain.vanilla` transfer whose source burn and Hub transaction already succeeded, if Bank B CTS rejects delivery before broadcasting a destination transaction with `MessageFailure(RaylsApp__PrivacyNodeFrozen)`, which native component is expected to initiate same-reference compensation, and what is the supported recovery procedure after governance is restored? In three controlled local trials, no automatic credit or refund was observed.
 
 This is a question arising from our controlled local deployment, **not** an allegation of a general Rayls vulnerability.
 
 ## Primary documentation
 
 - [Rayls freezing tokens](https://docs.rayls.com/docs/freezing-tokens)
-- [Rayls Enygma transaction lifecycle](https://docs.rayls.com/docs/how-enygma-works)
-- [Rayls Enygma sending requirements](https://docs.rayls.com/docs/send-enygma-transactions)
+- [Rayls standard cross-chain transaction lifecycle](https://docs.rayls.com/docs/how-a-cross-chain-transaction-works)
+- [Rayls ERC-20 teleport handlers](https://docs.rayls.com/docs/raylserc20handler)
 - [Pinned relayer source revision](https://github.com/raylsnetwork/rayls-sovereign-relayer/tree/b01b427de4cfc2ac66e75eba0d5070b73a3b137c)

@@ -1,0 +1,42 @@
+{
+  "verification": "PASS_MEASURED_TRIAL1_3CHAIN_AUTHENTICATED",
+  "trial": 1,
+  "condition": "UNFROZEN",
+  "source": {
+    "hash": "0x5fa4974749ffb45f18c4666680e71e539f2a25bbc93f1aeba29a405bf7fd8e7a",
+    "block": 26903,
+    "block_hash": "0xe80af1d65bcb25760f8ded9c593f06dcfe697f28281de4f9095592ff9013dc52",
+    "receipt_status": 1,
+    "canonical": true,
+    "tx_from": "0xE3e8Bb644eCCcFC368333d299c588DfF1251C1aC",
+    "tx_to": "0xAD523115cd35a8d4E60B3C0953E0E0ac10418309",
+    "nonce": 1
+  },
+  "hub": {
+    "hash": "0xa30288089ef03b807c8c0eb934f321b04523751f5f38d815263076ff61f78401",
+    "block": 15476,
+    "block_hash": "0x1891842cbcfeabe4771ff85c2ff76039c13e541b002ba67887e81cb7243443d1",
+    "status": 1,
+    "canonical": true,
+    "token_teleport_contract": "0xE6E340D132b5f46d1e472DebcD681B2aBc16e57E"
+  },
+  "destination": {
+    "hash": "0x74cb297099ea412f6854c4fd417280356020a3cecc80307ae282221b05d22f7b",
+    "block": 26943,
+    "block_hash": "0x373ebf58a4f3ed82661833d5fded9321fba85fabc31facd1039423fdeec5d5a9",
+    "receipt_status": 1,
+    "canonical": true,
+    "tx_from": "0xdFf8Eb7AFA06F51f6B0453A8c5d2e371ac9F1B8a",
+    "tx_to": "0x4A679253410272dd5232B3Ff7cF5dbB88f295319",
+    "nonce": 8
+  },
+  "message_id": "0x7a0f35546764afc7098f24cfdf85a8ad9d2e6440e5ade61ca6796b705c2bafda",
+  "resource_id": "0x290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e563",
+  "batch_id": "71d0d002-ccb1-4bd1-8e2d-134dace36c85",
+  "exact_message_id_joined_native_db": true,
+  "source_balance": "18.9",
+  "destination_balance": "1.1",
+  "note": "Source/destination IDs and events authenticated on chain. Hub association uses matching live native relayer rows; Hub receipt itself does not expose plaintext message ID. Separate chains have no comparable block heights.",
+  "frozen_trials_executed": 0,
+  "trials_completed": 1
+}

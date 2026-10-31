@@ -1,0 +1,61 @@
+{
+  "status": "PROSPECTIVE_AFTER_TRIAL_2_BEFORE_TRIAL_3",
+  "utc": "2026-10-31T16:37:57.893862+00:00",
+  "original_protocol_unchanged": "F,U per original precommitted order [U,F,F,U,U,F]; Trial1 U and Trial2 F already executed",
+  "remaining_trials": [
+    {
+      "trial": 3,
+      "condition": "FROZEN",
+      "amount_wei": "1000000000000000000"
+    },
+    {
+      "trial": 4,
+      "condition": "UNFROZEN",
+      "amount_wei": "1000000000000000000"
+    },
+    {
+      "trial": 5,
+      "condition": "UNFROZEN",
+      "amount_wei": "1000000000000000000"
+    },
+    {
+      "trial": 6,
+      "condition": "FROZEN",
+      "amount_wei": "1000000000000000000"
+    }
+  ],
+  "already_observed": {
+    "trial2": "native CTS pre-broadcast destination execution rejection by RaylsApp__PrivacyNodeFrozen(address)",
+    "source_burn_unreconciled_wei": "1000000000000000000",
+    "A_balance_wei": "17890000000000000000",
+    "B_balance_wei": "1110000000000000000",
+    "audit_sha256": "530cc0fb1d427c55922befef81f768b5fe409f4dade33689a74fc89b1dbecb35"
+  },
+  "amendment": "Previous master required full cross-bank supply reconciliation after every trial, which would suppress remaining frozen cases after an observed freeze rejection. Prospective adjustment: permit next trial after the previous frozen case reaches a verified terminal CTS pre-broadcast freeze rejection (exact message, nested error, no B receipt/credit), all governance/relayer controls fully restored, and source burn accounted for in an explicit cumulative gap; un-frozen cases still require full exact-message destination mint settlement. No repayments, mint top-ups, resets, or forced reconciliation are permitted.",
+  "expected_if_all_replicate": {
+    "T3_after_A_wei": "16890000000000000000",
+    "T3_after_B_wei": "1110000000000000000",
+    "T4_after_A_wei": "15890000000000000000",
+    "T4_after_B_wei": "2110000000000000000",
+    "T5_after_A_wei": "14890000000000000000",
+    "T5_after_B_wei": "3110000000000000000",
+    "T6_after_A_wei": "13890000000000000000",
+    "T6_after_B_wei": "3110000000000000000",
+    "total_unreconciled_after_T6_if_all_freezes_block_wei": "3000000000000000000"
+  },
+  "strict_next_trial_gate": [
+    "exact live chain identities and protected original STOP",
+    "source and destination supply/user balance equals expected each boundary",
+    "no unresolved relayer B pending rows",
+    "all local and Hub freeze flags clear and relayer B healthy",
+    "previous frozen case: canonical source and Hub, exact CTS crosschain vanilla error and no dest hash, verified no destination credit, 45 second frozen observation, and canonical governance restore",
+    "previous unfrozen case: canonical Bank A source + Hub + Bank B exact same message executed and exactly 1 token minted",
+    "never retry same user/source or governance tx if signed candidate or intent exists"
+  ],
+  "limitations": [
+    "amendment made after observing T2; must disclose in X article; not original preregistered settlement continuation gate",
+    "frozen ordinary teleport burns source on Bank A without atomic rollback, so cumulative supply gap is expected under repeat preflight rejection",
+    "this is an isolated local shadow mechanism experiment, not a production guarantee",
+    "no new transfers authorized by this amendment alone; requires new explicit one-time master approval for up to four future transfers and 12 governance ops"
+  ]
+}

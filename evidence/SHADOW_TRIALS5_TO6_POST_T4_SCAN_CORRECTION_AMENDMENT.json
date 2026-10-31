@@ -1,0 +1,41 @@
+{
+  "classification": "PROSPECTIVE_AFTER_T4_FALSE_NEGATIVE_SAFE_STOP_BEFORE_T5",
+  "utc": "2026-10-31T16:53:36.856586+00:00",
+  "reason": "Previous one-time batch correctly stopped because its destination block scanner contained a typo in the endpoint address. A separately authored read-only canonical evidence audit authenticated T4 settlement and preserved original failed scan.",
+  "old_failed_audit": "SHADOW_BATCH_T4_OUTCOME_UNSETTLED.json",
+  "independent_correction": "SHADOW_BATCH_T4_FULLY_SETTLED.json",
+  "independent_correction_sha256": "ee0696a76ce4d20967b35a87f3bb9669e93d9091f161f5d93e54db8d7534555f",
+  "completed_trials": {
+    "1": "UNFROZEN_MINT_SETTLED",
+    "2": "FROZEN_CTS_PREFLIGHT_REJECTED_WITH_UNRECONCILED_SOURCE_BURN",
+    "3": "FROZEN_CTS_PREFLIGHT_REJECTED_WITH_UNRECONCILED_SOURCE_BURN",
+    "4": "UNFROZEN_EXACT_CANONICAL_MINT_SETTLED"
+  },
+  "remaining": [
+    {
+      "trial": 5,
+      "condition": "UNFROZEN",
+      "amount_wei": "1000000000000000000"
+    },
+    {
+      "trial": 6,
+      "condition": "FROZEN",
+      "amount_wei": "1000000000000000000"
+    }
+  ],
+  "starting_balance_wei": {
+    "BankA": "15890000000000000000",
+    "BankB": "2110000000000000000"
+  },
+  "starting_cumulative_unreconciled_wei": "2000000000000000000",
+  "new_authorization_scope": "two source payments, 6 governance operations, 1 Bank-B relayer hold/release cycle; not authorized by this amendment itself",
+  "next_trial_gate": "T5 full source-Hub-B exact mint and 1 token accounting; T6 source-Hub exact CTS freeze preflight rejection and no destination receipt, governance restore, cumulative burn gap disclosed",
+  "safety": [
+    "no resending T3 or T4",
+    "never rerun the spent T3-T6 master batch",
+    "do not overwrite any preexisting forensic audits",
+    "original STOP protected",
+    "one approval for only T5 and T6",
+    "fail-closed and no auto-retries"
+  ]
+}

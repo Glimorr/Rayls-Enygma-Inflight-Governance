@@ -1,0 +1,46 @@
+{
+  "verification": "FROZEN_TERMINAL_PREFLIGHT_REJECTION_ACCOUNTED",
+  "trial": 3,
+  "condition": "FROZEN",
+  "source": {
+    "hash": "0xc18be24f8e7e75eeda3d07bd1ed0b3f86fcab8431d7f4de1d381d2871eb64389",
+    "block": 39805,
+    "canonical": true,
+    "burn_wei": "1000000000000000000"
+  },
+  "hub": {
+    "hash": "0x4069b11207baf4c2d03532533e100a13636d1a55ce78fdb4c6c4593cddaf6544",
+    "block": 22921,
+    "canonical": true
+  },
+  "exact_message_id": "0x578ff14fa9c5c41487b019b5ec84072ee40d6027bb337ec68596aee9434ff600",
+  "cts": {
+    "correlation_id": "721eacd3-f628-44b3-bc60-b7fbfacc1c65",
+    "error": "RaylsApp__PrivacyNodeFrozen(address)",
+    "outer": "MessageFailure(bytes32,bytes)",
+    "tx_hash": null,
+    "send_attempts": 1,
+    "receipt_attempts": 0
+  },
+  "freeze_observation": {
+    "samples": 10,
+    "seconds": 53.433,
+    "all_three_frozen": true
+  },
+  "after_restoration": {
+    "A_balance_wei": "16890000000000000000",
+    "B_balance_wei": "1110000000000000000",
+    "combined_supply_wei": "18000000000000000000",
+    "cumulative_unreconciled_wei": "2000000000000000000",
+    "all_freeze_controls_clear": true,
+    "source_nonce": 5
+  },
+  "dest_scan": {
+    "from_block": 39950,
+    "to_block": 40156,
+    "exact_executions": 0,
+    "mint_events_to_user": 0
+  },
+  "scientific_limitation": "Causal destination preflight rejection while frozen; ordinary transfer burned source without an authenticated refund. NOT a mined revert or reconciled settlement.",
+  "safe_to_proceed_under_prospective_amendment": true
+}

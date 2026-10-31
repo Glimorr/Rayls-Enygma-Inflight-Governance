@@ -1,0 +1,48 @@
+{
+  "verification": "ALL_SIX_TRIALS_MEASURED_WITH_EXPLICIT_TERMINAL_OUTCOMES",
+  "verified_before_amendment": {
+    "trial1": "UNFROZEN_EXECUTED_MINTED",
+    "trial2": "FROZEN_CTS_PREFLIGHT_REJECTION_SOURCE_BURN_UNRECONCILED"
+  },
+  "new_trials": [
+    {
+      "trial": 3,
+      "result": "FROZEN_TERMINAL_PREFLIGHT_REJECTION_ACCOUNTED",
+      "evidence_file": "SHADOW_BATCH_T3_FROZEN_TERMINAL_REJECTION.json"
+    },
+    {
+      "trial": 4,
+      "result": "BATCH_THREE_CHAIN_FULLY_SETTLED",
+      "evidence_file": "SHADOW_BATCH_T4_FULLY_SETTLED.json"
+    },
+    {
+      "trial": 5,
+      "result": "BATCH_THREE_CHAIN_FULLY_SETTLED",
+      "evidence_file": "SHADOW_BATCH_T5_FULLY_SETTLED.json"
+    },
+    {
+      "trial": 6,
+      "result": "FROZEN_TERMINAL_PREFLIGHT_REJECTION_ACCOUNTED",
+      "evidence_file": "SHADOW_BATCH_T6_FROZEN_TERMINAL_REJECTION.json"
+    }
+  ],
+  "original_condition_order": [
+    "UNFROZEN",
+    "FROZEN",
+    "FROZEN",
+    "UNFROZEN",
+    "UNFROZEN",
+    "FROZEN"
+  ],
+  "scientific_limitations": [
+    "post-Trial2 prospective amendment (not original preregistered settlement gate)",
+    "T4 independent canonical recovery audit corrected scanner endpoint typo before T5",
+    "frozen trials are pre-broadcast rejections, not mined reverts",
+    "each frozen vanilla transfer burns source tokens without automatic compensation; no refund credited",
+    "do not describe frozen cases as successful financial settlement"
+  ],
+  "final_expected_A_wei": "13890000000000000000",
+  "final_expected_B_wei": "3110000000000000000",
+  "final_expected_cumulative_unreconciled_wei": "3000000000000000000",
+  "time_utc": "2026-10-31T17:00:41.197676+00:00"
+}

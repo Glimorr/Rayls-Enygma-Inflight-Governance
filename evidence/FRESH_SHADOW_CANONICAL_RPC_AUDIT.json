@@ -1,0 +1,219 @@
+{
+  "utc": "2026-10-31T18:03:21.863161+00:00",
+  "scope": "read-only shadow RPC",
+  "chain_ids": {
+    "a": 12345,
+    "b": 12346,
+    "hub": 1337
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "condition": "UNFROZEN",
+      "receipts": {
+        "source": {
+          "hash": "0x5fa4974749ffb45f18c4666680e71e539f2a25bbc93f1aeba29a405bf7fd8e7a",
+          "canonical": true,
+          "status": 1,
+          "status_matches_saved": true,
+          "blockhash_matches_saved": true,
+          "block_number": 26903,
+          "block_hash": "0xe80af1d65bcb25760f8ded9c593f06dcfe697f28281de4f9095592ff9013dc52",
+          "log_count": 2
+        },
+        "hub": {
+          "hash": "0xa30288089ef03b807c8c0eb934f321b04523751f5f38d815263076ff61f78401",
+          "canonical": true,
+          "status": 1,
+          "status_matches_saved": true,
+          "blockhash_matches_saved": true,
+          "block_number": 15476,
+          "block_hash": "0x1891842cbcfeabe4771ff85c2ff76039c13e541b002ba67887e81cb7243443d1",
+          "log_count": 2
+        },
+        "destination": {
+          "hash": "0x74cb297099ea412f6854c4fd417280356020a3cecc80307ae282221b05d22f7b",
+          "canonical": true,
+          "status": 1,
+          "status_matches_saved": true,
+          "blockhash_matches_saved": true,
+          "block_number": 26943,
+          "block_hash": "0x373ebf58a4f3ed82661833d5fded9321fba85fabc31facd1039423fdeec5d5a9",
+          "log_count": 2
+        }
+      },
+      "all_checked_canonical": true,
+      "outcome_expected_destination_receipt": true,
+      "destination_receipt_present": true
+    },
+    {
+      "trial": 2,
+      "condition": "FROZEN",
+      "receipts": {
+        "source": {
+          "hash": "0x5dcb97b1986f9a4d759ef638c1c05b606ecba905d20353a97bb551754b5c5670",
+          "canonical": true,
+          "status": 1,
+          "status_matches_saved": true,
+          "blockhash_matches_saved": true,
+          "block_number": 36508,
+          "block_hash": "0xd81f6c8a4678a0c0a96f577f83a4a0e1870c69b1108371eb85f1fdfcdc02e18e",
+          "log_count": 2
+        },
+        "hub": {
+          "hash": "0xf4d4af8885c6ffa9a4682d2006f0b7419f13bfbdeb62109e7fd47aaed78a0d4f",
+          "canonical": true,
+          "status": 1,
+          "status_matches_saved": true,
+          "blockhash_matches_saved": true,
+          "block_number": 21017,
+          "block_hash": "0x3cbdcfe9f2117d3f024318b5753d304e618a3cac6c48c8361922b30b2c2387fa",
+          "log_count": 2
+        }
+      },
+      "all_checked_canonical": true,
+      "outcome_expected_destination_receipt": false,
+      "destination_receipt_present": false
+    },
+    {
+      "trial": 3,
+      "condition": "FROZEN",
+      "receipts": {
+        "source": {
+          "hash": "0xc18be24f8e7e75eeda3d07bd1ed0b3f86fcab8431d7f4de1d381d2871eb64389",
+          "canonical": true,
+          "status": 1,
+          "status_matches_saved": true,
+          "blockhash_matches_saved": true,
+          "block_number": 39805,
+          "block_hash": "0xa380ec808fe0569fcfe0bf97cd1313714dd82977662a8dcfbfb3837fc2836639",
+          "log_count": 2
+        },
+        "hub": {
+          "hash": "0x4069b11207baf4c2d03532533e100a13636d1a55ce78fdb4c6c4593cddaf6544",
+          "canonical": true,
+          "status": 1,
+          "status_matches_saved": true,
+          "blockhash_matches_saved": true,
+          "block_number": 22921,
+          "block_hash": "0x83eb4597955e061b7eb2df9f4e40a8635bee71e8862f6d718ef79260098fc5a8",
+          "log_count": 2
+        }
+      },
+      "all_checked_canonical": true,
+      "outcome_expected_destination_receipt": false,
+      "destination_receipt_present": false
+    },
+    {
+      "trial": 4,
+      "condition": "UNFROZEN",
+      "receipts": {
+        "source": {
+          "hash": "0xbb557f707e63971c5115e86472465ca2b927f00661e7dc659cdec233df5ce024",
+          "canonical": true,
+          "status": 1,
+          "status_matches_saved": true,
+          "blockhash_matches_saved": true,
+          "block_number": 40018,
+          "block_hash": "0x1696d2650c13fe5248d27399b389ac690f7d281757f9652e410bdb408f2ef094",
+          "log_count": 2
+        },
+        "hub": {
+          "hash": "0xe430e200295b3b724d7886eb8786bd8844e8d9c1d3cb84dacaaf73acb9b800d1",
+          "canonical": true,
+          "status": 1,
+          "status_matches_saved": true,
+          "blockhash_matches_saved": true,
+          "block_number": 23043,
+          "block_hash": "0x9b91f6061765c9ff22beefdeacbd19d1123d143039ad52db3428af0f621e6901",
+          "log_count": 2
+        },
+        "destination": {
+          "hash": "0x775ed63f035788cdb3ff3ea2f253c70645f36bb481b1af4f15f01f8896718978",
+          "canonical": true,
+          "status": 1,
+          "status_matches_saved": true,
+          "blockhash_matches_saved": true,
+          "block_number": 40176,
+          "block_hash": "0x5d0fa6069c5546c03eab894f8564703aa7bf160fd403de8e497edc36137f1e01",
+          "log_count": 2
+        }
+      },
+      "all_checked_canonical": true,
+      "outcome_expected_destination_receipt": true,
+      "destination_receipt_present": true
+    },
+    {
+      "trial": 5,
+      "condition": "UNFROZEN",
+      "receipts": {
+        "source": {
+          "hash": "0x7bca50293ffbc361bb495b7801b37c8c152669db0cd116e77965c92ebd78c9e8",
+          "canonical": true,
+          "status": 1,
+          "status_matches_saved": true,
+          "blockhash_matches_saved": true,
+          "block_number": 40925,
+          "block_hash": "0x251c89a268881baaa6330fd9d2da7308dbfb3edab22bf3035578b4d6583bfabb",
+          "log_count": 2
+        },
+        "hub": {
+          "hash": "0x83d68b5edf475dfd644ea97a162f9606e017f0d5f734bcedbc4f279a9b1968e1",
+          "canonical": true,
+          "status": 1,
+          "status_matches_saved": true,
+          "blockhash_matches_saved": true,
+          "block_number": 23560,
+          "block_hash": "0xdebac1acaae440d9b9ded3c080865e395917e27a1a1eac7106191f497307439d",
+          "log_count": 2
+        },
+        "destination": {
+          "hash": "0x03a39e8b33b9e7c68eb7ce664b185ac1c2f32b88061971979414b827cf048419",
+          "canonical": true,
+          "status": 1,
+          "status_matches_saved": true,
+          "blockhash_matches_saved": true,
+          "block_number": 41066,
+          "block_hash": "0x5932c94b89ff8b410a2f0bde9fdf3a55a07bc982120400fa28d2e853507c34ea",
+          "log_count": 2
+        }
+      },
+      "all_checked_canonical": true,
+      "outcome_expected_destination_receipt": true,
+      "destination_receipt_present": true
+    },
+    {
+      "trial": 6,
+      "condition": "FROZEN",
+      "receipts": {
+        "source": {
+          "hash": "0xcb94101191d444671d856c41f73b8875f8dbbdb34174525b7e72a1af501ebbf6",
+          "canonical": true,
+          "status": 1,
+          "status_matches_saved": true,
+          "blockhash_matches_saved": true,
+          "block_number": 40956,
+          "block_hash": "0x9ec991bbfecdd41d3c6214d11fa9ef1a3349823180ab40a56226ff275e2e01fd",
+          "log_count": 2
+        },
+        "hub": {
+          "hash": "0xb853c41e87706f2ab0992b23aa732fb0a3755d123ff82c1c5988f4e9c364c687",
+          "canonical": true,
+          "status": 1,
+          "status_matches_saved": true,
+          "blockhash_matches_saved": true,
+          "block_number": 23580,
+          "block_hash": "0x70f930ff2508e1b057676ebba7fec46905972b9758a0226169248ac23832468c",
+          "log_count": 2
+        }
+      },
+      "all_checked_canonical": true,
+      "outcome_expected_destination_receipt": false,
+      "destination_receipt_present": false
+    }
+  ],
+  "canonical_receipts_checked": 15,
+  "all_checked_canonical": true,
+  "correct_destination_receipt_pattern": true,
+  "boundary": "No historic negative evidence directly proven by absence of a known destination hash; CTS and log scans remain separately required"
+}

@@ -1,0 +1,24 @@
+{
+  "verification": "PASS_BANK_B_FREEZE_CAUSAL_SENSITIVITY",
+  "classification": "non-payment positive sensitivity control; measured trials remain 1/6",
+  "before_mint_simulation": "PASS",
+  "while_frozen_mint_simulation": "REVERT_RaylsApp__PrivacyNodeFrozen",
+  "expected_revert_selector": "0xcecb8d3c",
+  "after_unfreeze_mint_simulation": "PASS",
+  "freeze_tx": {
+    "hash": "0x6aec3b555dc7d43ffe1104b459b13857c34a54aa6700e62cafe385a50410a64a",
+    "block": 30785,
+    "canonical": true,
+    "nonce": 177
+  },
+  "unfreeze_tx": {
+    "hash": "0x8494c0a39ad1cca0cbba987df65ff739a3ca1407b2060310f565a2201d7746ca",
+    "block": 30801,
+    "canonical": true,
+    "nonce": 178
+  },
+  "freeze_flags_restored": true,
+  "balance_unchanged_wei": "1110000000000000000",
+  "actual_cross_bank_payments_sent": 0,
+  "measured_trials_completed": 1
+}

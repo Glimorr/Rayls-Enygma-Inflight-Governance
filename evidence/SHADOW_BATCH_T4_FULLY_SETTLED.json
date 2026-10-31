@@ -1,0 +1,38 @@
+{
+  "verification": "BATCH_THREE_CHAIN_FULLY_SETTLED",
+  "trial": 4,
+  "condition": "UNFROZEN",
+  "source": {
+    "hash": "0xbb557f707e63971c5115e86472465ca2b927f00661e7dc659cdec233df5ce024",
+    "block": 40018,
+    "block_hash": "0x1696d2650c13fe5248d27399b389ac690f7d281757f9652e410bdb408f2ef094",
+    "status": 1
+  },
+  "hub": {
+    "hash": "0xe430e200295b3b724d7886eb8786bd8844e8d9c1d3cb84dacaaf73acb9b800d1",
+    "block": 23043,
+    "block_hash": "0x9b91f6061765c9ff22beefdeacbd19d1123d143039ad52db3428af0f621e6901",
+    "status": 1
+  },
+  "message_id": "0x9e4ba52aa52d990155d57a15ba4f57969a50b1695d044761d7b142cdb8ae67d1",
+  "destination": {
+    "hash": "0x775ed63f035788cdb3ff3ea2f253c70645f36bb481b1af4f15f01f8896718978",
+    "block": 40176,
+    "block_hash": "0x5d0fa6069c5546c03eab894f8564703aa7bf160fd403de8e497edc36137f1e01",
+    "receipt_status": 1,
+    "exact_message_executed": true,
+    "exact_erc20_minted_wei": "1000000000000000000",
+    "endpoint": "0x4A679253410272dd5232B3Ff7cF5dbB88f295319"
+  },
+  "balances": {
+    "A_wei": "15890000000000000000",
+    "B_wei": "2110000000000000000",
+    "combined_supply_wei": "18000000000000000000",
+    "cumulative_unreconciled_frozen_source_burns_wei": "2000000000000000000",
+    "source_user_nonce": 6
+  },
+  "evidence_method": "read-only exact indexed MessageIdExecuted event + canonical destination receipt + matching transfer mint + canonical source & Hub",
+  "original_failed_audit_preserved": "SHADOW_BATCH_T4_OUTCOME_UNSETTLED.json",
+  "false_negative_root_cause": "Original address literal in shadow-batch-final-audit.cjs omitted f: ...7c5db... instead of actual ...7cf5db...; original scan falsely reported zero matching transactions",
+  "scientific_limit": "This correction is a post-batch independent audit; no replay, resubmission, or governance action"
+}

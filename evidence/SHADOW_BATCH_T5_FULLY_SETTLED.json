@@ -1,0 +1,39 @@
+{
+  "verification": "BATCH_THREE_CHAIN_FULLY_SETTLED",
+  "trial": 5,
+  "condition": "UNFROZEN",
+  "source": {
+    "hash": "0x7bca50293ffbc361bb495b7801b37c8c152669db0cd116e77965c92ebd78c9e8",
+    "block": 40925
+  },
+  "hub": {
+    "hash": "0x83d68b5edf475dfd644ea97a162f9606e017f0d5f734bcedbc4f279a9b1968e1",
+    "block": 23560
+  },
+  "message_id": "0x0fb068b3cdd4d5b4c9a640714ee3642a77a779e24f8c3c7ed1168d7c559535c3",
+  "B_scan": {
+    "from": 41049,
+    "to": 41074,
+    "matches": [
+      {
+        "hash": "0x03a39e8b33b9e7c68eb7ce664b185ac1c2f32b88061971979414b827cf048419",
+        "block": 41066,
+        "block_hash": "0x5932c94b89ff8b410a2f0bde9fdf3a55a07bc982120400fa28d2e853507c34ea",
+        "status": 1,
+        "canonical": true
+      }
+    ]
+  },
+  "A_balance_after_wei": "14890000000000000000",
+  "B_balance_after_wei": "3110000000000000000",
+  "B_balance_before_wei": "2110000000000000000",
+  "actual_destination_outcome": "CANONICAL_SETTLEMENT_AND_EXACT_MINT",
+  "destination": {
+    "hash": "0x03a39e8b33b9e7c68eb7ce664b185ac1c2f32b88061971979414b827cf048419",
+    "block": 41066,
+    "block_hash": "0x5932c94b89ff8b410a2f0bde9fdf3a55a07bc982120400fa28d2e853507c34ea",
+    "receipt_status": 1,
+    "exact_message_executed": true,
+    "exact_erc20_minted_wei": "1000000000000000000"
+  }
+}

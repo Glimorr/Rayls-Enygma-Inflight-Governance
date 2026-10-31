@@ -1,0 +1,72 @@
+{
+  "verification": "TRIAL2_POST_REJECTION_ACCOUNTING_READONLY",
+  "scope": "isolated W5 shadow 2026-10-31",
+  "trial": 2,
+  "source_tx": {
+    "hash": "0x5dcb97b1986f9a4d759ef638c1c05b606ecba905d20353a97bb551754b5c5670",
+    "block": 36508,
+    "canonical": true,
+    "function": "teleport",
+    "burn_wei": "1000000000000000000"
+  },
+  "hub_tx": {
+    "hash": "0xf4d4af8885c6ffa9a4682d2006f0b7419f13bfbdeb62109e7fd47aaed78a0d4f",
+    "block": 21017,
+    "canonical": true
+  },
+  "live_heads": {
+    "A": 38623,
+    "Hub": 22234,
+    "B": 38735
+  },
+  "balances": {
+    "A_user_wei": "17890000000000000000",
+    "A_supply_wei": "17890000000000000000",
+    "B_user_wei": "1110000000000000000",
+    "B_supply_wei": "1110000000000000000",
+    "combined_supply_wei": "19000000000000000000",
+    "baseline_combined_supply_wei": "20000000000000000000",
+    "gap_wei": "1000000000000000000"
+  },
+  "A_user_nonce": 4,
+  "governance": {
+    "hub_frozen_A": false,
+    "hub_frozen_B": false,
+    "bankA_PN_status": 2,
+    "bankB_PN_status": 2,
+    "bankA_Hub_status": 2,
+    "bankB_Hub_status": 2
+  },
+  "transfer_scan": {
+    "source_start_block": 36508,
+    "source_end_block": 38623,
+    "source_user_inbound_events": [],
+    "source_refund_mints_after_trial2": [],
+    "dest_mints_last_4000_blocks": [],
+    "source_user_mint_refund_not_observed": true
+  },
+  "hub_token_balance_events": {
+    "emitter": "0x34B40BA116d5Dec75548a9e9A8f15411461E8c70",
+    "range_from_block": 14500,
+    "range_to_block": 22234,
+    "matching_resource_updates": [
+      {
+        "tx_hash": "0x69700fa233f5430b0aa488a3b32a3c2595936bc7563315b6d634cba9fbbf9935",
+        "block": 14500,
+        "issuer": 12345,
+        "update_type": 1,
+        "amount_wei": "20000000000000000000"
+      }
+    ]
+  },
+  "interpretation": {
+    "vanilla_teleport_burn_confirmed": true,
+    "preflight_rejection_proven_by_previous_forensic_audit": true,
+    "source_refund_mint_not_observed": true,
+    "source_balance_and_destination_balance_still_unreconciled": true,
+    "manual_mint_or_atomic_replay_not_authorized": true,
+    "source_vanilla_has_no_revert_callback": true,
+    "atomic_teleport_has_separate_callbacks_not_used_by_trial2": true,
+    "limitation": "No refund mint observed in the examined A-chain event range. Do not infer that no supported administrative compensation exists elsewhere. Hub balance events reflect accounting updates, not balances transferable to the user."
+  }
+}

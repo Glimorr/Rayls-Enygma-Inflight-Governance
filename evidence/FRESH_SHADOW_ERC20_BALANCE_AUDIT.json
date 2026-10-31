@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-31T18:04:25.227738+00:00",
+  "basis": "direct eth_call latest against isolated shadow chains",
+  "chain_balances": {
+    "a": {
+      "user_balance_wei": "13890000000000000000",
+      "supply_wei": "13890000000000000000"
+    },
+    "b": {
+      "user_balance_wei": "3110000000000000000",
+      "supply_wei": "3110000000000000000"
+    }
+  },
+  "initial_combined_wei": "20000000000000000000",
+  "final_combined_wei": "17000000000000000000",
+  "unreconciled_wei": "3000000000000000000"
+}

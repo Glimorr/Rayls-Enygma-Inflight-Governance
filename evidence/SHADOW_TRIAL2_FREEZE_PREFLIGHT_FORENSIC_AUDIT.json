@@ -1,0 +1,51 @@
+{
+  "verification": "PASS_TRIAL2_EXACT_CTS_PREFLIGHT_FREEZE_REJECTION",
+  "time_utc": "2026-10-31T16:27:12.979351+00:00",
+  "trial": 2,
+  "message_id": "0x2ce134b7092c8717710be0076de7a975e3ae5ca33712cf2ae5c84a31b0e05572",
+  "source": {
+    "tx_hash": "0x5dcb97b1986f9a4d759ef638c1c05b606ecba905d20353a97bb551754b5c5670",
+    "block": 36508,
+    "status": 1,
+    "before_wei": "18890000000000000000",
+    "after_wei": "17890000000000000000"
+  },
+  "hub": {
+    "tx_hash": "0xf4d4af8885c6ffa9a4682d2006f0b7419f13bfbdeb62109e7fd47aaed78a0d4f",
+    "block": 21017,
+    "canonical": true
+  },
+  "freeze": {
+    "hub_and_local_A_and_B_confirmed": true,
+    "B_mint_staticcall_revert_selector": "0xcecb8d3c",
+    "all_restored": true
+  },
+  "cts": {
+    "correlation_id": "d571c2aa-02e9-4794-bf02-b9d6d664a9bf",
+    "identity": "privatenode",
+    "message_type": "crosschain.vanilla",
+    "status": "finished",
+    "receipt_status": 0,
+    "tx_hash": null,
+    "send_attempts": 1,
+    "receipt_attempts": 0
+  },
+  "decoded_revert": {
+    "outer": "MessageFailure(bytes32,bytes)",
+    "inner": "RaylsApp__PrivacyNodeFrozen(address)",
+    "token": "0x4878638dF091A638e0dF0E5D59E73F639f76499C",
+    "raw_hex": "be72113c2ce134b7092c8717710be0076de7a975e3ae5ca33712cf2ae5c84a31b0e0557200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000024cecb8d3c0000000000000000000000004878638df091a638e0df0e5d59e73f639f76499c00000000000000000000000000000000000000000000000000000000"
+  },
+  "destination": {
+    "canonical_transaction_to_endpoint_found": false,
+    "balance_wei": "1110000000000000000",
+    "no_mined_revert_receipt": true
+  },
+  "accounting": {
+    "A_wei": "17890000000000000000",
+    "B_wei": "1110000000000000000",
+    "unreconciled_source_burn_wei": "1000000000000000000"
+  },
+  "scientific_interpretation": "Live in-flight freeze caused pre-broadcast CTS execution rejection. No destination tx was mined. Does not establish token refund or compensation.",
+  "batch_state": "T3-T6 not executed; batch stopped fail-closed; no replays"
+}

@@ -1,0 +1,15 @@
+name: Verify evidence
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check evidence integrity
+        run: sha256sum --check EVIDENCE_SHA256SUMS.txt
+      - name: Check experimental outcomes
+        run: python3 verify_evidence.py

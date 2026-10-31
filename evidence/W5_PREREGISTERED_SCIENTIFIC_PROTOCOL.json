@@ -1,0 +1,76 @@
+{
+  "causal_intervention": {
+    "exact_time_note": "block numbers across different chains are not directly comparable; use reference binding, signed events, host monotonic timestamps with limits, and explicit durable barrier. Do not infer causal time order from cross-chain block heights alone",
+    "interval": "begin at max independently verified freeze applied across required ledgers, end before first unfreeze submission/acceptance",
+    "minimum_observation_s": 20,
+    "t0": "source transaction receipt and exact new reference recorded",
+    "t1": "Hub proof transaction receipt and reference receipt recorded",
+    "t2": "governance freeze execution receipts at Hub and BOTH participants; per-chain frozen token flags confirmed",
+    "t3": "destination release/processing attempt (independent logs and reference state)"
+  },
+  "controls": {
+    "fresh_matched_unfrozen": "required if feasible and separately budgeted, same topology/amount/timing without governance freeze; otherwise disclose contemporaneous control absent",
+    "historical_delay_control": "existing 45-second delay5/5 provides past effect of hold without freeze",
+    "historical_positive_working_payments": "existing normal 5/5 proves reference can settle on this network in prior conditions",
+    "positive_sensitivity": "demonstrate detection of actual credit and canonical mint in control; prove freeze flags true during intervention, otherwise cannot attribute no-credit to governance"
+  },
+  "existing_data": {
+    "delay_45s": "5/5, historically verified, not simultaneous",
+    "interrupted_recovery": "3/3, historically verified, not an independent matched freeze control",
+    "normal_baseline": "5/5, historically verified, not simultaneous",
+    "original_freeze_attempt": "4/11, incomplete, 10 units still outstanding; MUST NOT be counted as completed freeze trial",
+    "revalidation": "12 canonical historical receipts independently reread from RPC in W5_HISTORICAL_RECEIPTS_REAUDIT.json"
+  },
+  "hard_stops": [
+    "any ambiguous signed candidate or RPC outcome",
+    "nonce drift; mismatched chain, signer, calldata, source, or approval",
+    "unverified native CTS ownership",
+    "gateway STOP latch",
+    "unexpected settlement/competing sender",
+    "failed canonical transaction/block inclusion or accounting",
+    "observed potential double-credit/replay"
+  ],
+  "prerequisites": [
+    "reviewed durable native CTS signer ownership and signed-raw-before-broadcast persistence",
+    "gateway journal with exact authorization and fail-closed ambiguous outcome",
+    "separate approved restoration of original 10 units with credit10/refund0/outstanding0",
+    "fresh starting balances/nonces and authorization scope",
+    "no outstanding governance signed candidates that can late-execute",
+    "participant contracts, local freeze flags and replay getters verified and clean"
+  ],
+  "primary_hypothesis": "If Hub and both participant local freezes are validly executed after the Hub has accepted a transfer but before the destination handler can settle it, the destination token credit remains zero during a pre-unfreeze observation window.",
+  "primary_outcome": {
+    "definition": "number of destination tokens newly credited for the EXACT new payment reference while all required freeze flags are independently confirmed true and before the first unfreeze is accepted",
+    "failure_per_trial": "any positive destination credit, canonical mint/completion receipt, or contradictory native reference status during that window",
+    "success_per_trial": "destination credit for reference remains exactly zero throughout the observation window; no matching successful mint receipt and no reference completion",
+    "unresolved": "insufficient evidence, governance not confirmed at required participants in time, missing canonical receipt, unknown RPC outcome, failed controlled hold, or unsafe partial execution; cannot score as successful block"
+  },
+  "recording_rules": "After technical completion, demonstrate existing receipts and state with read-only commands. Historical presentation must be labeled historical; do not represent live execution or simulated evidence as live.",
+  "replication": "Minimum one properly controlled fresh intervention may establish local proof-of-behavior but NOT success rate/reliability. Target at least 3 independent frozen and 3 independent contemporaneous unfrozen trials only with separately approved budget and a functioning clean environment. Report exact n without inflating.",
+  "reporting_rules": [
+    "Preserve all failures and incomplete cases",
+    "No extrapolation beyond single local deployment",
+    "Separate actual receipts, native logs, saved historical audits and inference",
+    "No automatic repeated debit after unsettled payment",
+    "Never describe the original unfinished 4/11 freeze as success",
+    "Publish only vetted non-secret evidence"
+  ],
+  "research_question": "Can an institutional governance freeze, accepted after a confidential source-to-Hub payment but executed before destination settlement, prevent that destination settlement during a defined interval? What is the subsequent settlement and recovery result?",
+  "sealed_utc": "2026-10-31T03:49:10.792056+00:00",
+  "secondary_outcomes": [
+    "time to governance application on Hub, A, B (with uncertainty)",
+    "natural 60-second post-intervention observation when safe and approved",
+    "post-unfreeze destination settlement or refund with exact source/destination balance reconciliation",
+    "native reference status and independent destination token balance",
+    "replay rejection after duplicate old governance candidate"
+  ],
+  "status": "PRECOMMITTED_BEFORE_FUTURE_SCIENTIFIC_TRIAL__NOT_APPROVED_FOR_EXECUTION",
+  "system_scope": {
+    "conclusion_scope": "specific controlled local deployment and version; not all production configurations",
+    "destination_chain_id": 12346,
+    "hub_chain_id": 1337,
+    "source_chain_id": 12345,
+    "technology": "Rayls Sovereign Private Network local test deployment"
+  },
+  "version": "1.0.0"
+}

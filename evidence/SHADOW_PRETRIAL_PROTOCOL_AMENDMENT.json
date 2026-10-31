@@ -1,0 +1,24 @@
+{
+  "sealed_utc": "2026-10-31T10:41:56.294293+00:00",
+  "amendment_id": "W5_SHADOW_INDEPENDENT_ENVIRONMENT_V1",
+  "original_protocol_sha256": "088747aac6e53c3e11ad9901b782d945bf2982eaef76a2aa813394615a535f37",
+  "original_randomized_order_sha256": "ec8832861115dcd0e84ddfc62f6104923d7dfe57105fc14ff6620bc8f4dd1283",
+  "separation": "New real Rayls local A(12345), B(12346), Hub(1337) blockchains have distinct genesis hashes/volumes and are NOT the original partially frozen deployment. Never combine these samples with original or historical baseline as if matched.",
+  "original_outstanding_reference": "Unresolved 10 units in previous environment; old STOP remains active, earlier 4/11 attempt is incomplete and cannot be counted.",
+  "conditional_scope_change": "Original prereg listed restoration of old 10 units as prerequisite. This new deployment is isolated and has no inherited outstanding old payment, so this is a distinct auxiliary experiment with its own pretrial registration, not fulfillment of original restoration requirement. If original restoration remains undone, disclose this prominently.",
+  "new_environment_requirements": [
+    "shadow source image deployment source pinned and genesis preflight must pass",
+    "Hub and participant contracts must be authenticated by actual receipts and deployment registry readbacks before payment trials",
+    "never use original CTS identities, database volumes, relayers, original gateway, old approvals, signed candidates or signer service",
+    "positive unfrozen controls should settle with independently proven canonical mint and native reference state",
+    "frozen intervention requires Hub and both participant local freeze execution receipts BEFORE destination release, flags independently read true",
+    "minimum 20-second observation interval with no destination mint then separate unfreeze and accounting reconciliation",
+    "preserve random pair order sealed earlier, note original trial order was set before shadow experiment existed; if infeasible predeclare amendments before outcomes",
+    "report all trials including invalid/inconclusive, no substitution of simulated/mock receipts",
+    "per-chain block heights must not be taken as cross-chain temporal ordering"
+  ],
+  "target_trials": 6,
+  "completed_trials": 0,
+  "status": "PRETRIAL_SHADOW_PROTOCOL_AMENDMENT__NO_CONTRACTS_DEPLOYED__NO_FRESH_TRIALS",
+  "scientific_limit": "Even 3 pairs demonstrate local mechanism, not network-wide reliability; cannot guarantee 10/10 evaluator score"
+}

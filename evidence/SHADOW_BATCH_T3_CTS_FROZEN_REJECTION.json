@@ -1,0 +1,35 @@
+{
+  "verification": "EXACT_MESSAGE_CTS_PREFLIGHT_FREEZE_REJECTION",
+  "trial": 3,
+  "source_tx_hash": "0xc18be24f8e7e75eeda3d07bd1ed0b3f86fcab8431d7f4de1d381d2871eb64389",
+  "message_id": "0x578ff14fa9c5c41487b019b5ec84072ee40d6027bb337ec68596aee9434ff600",
+  "read_utc": "2026-10-31T16:49:37.248273+00:00",
+  "cts": {
+    "correlation_id": "721eacd3-f628-44b3-bc60-b7fbfacc1c65",
+    "identity": "privatenode",
+    "message_type": "crosschain.vanilla",
+    "status": "finished",
+    "receipt_status": 0,
+    "tx_hash": null,
+    "send_attempts": 1,
+    "receipt_attempts": 0,
+    "created_unix": 1793465296.135876,
+    "updated_unix": 1793465297.146874
+  },
+  "cts_revert_payload_hex": "be72113c578ff14fa9c5c41487b019b5ec84072ee40d6027bb337ec68596aee9434ff60000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000024cecb8d3c0000000000000000000000004878638df091a638e0df0e5d59e73f639f76499c00000000000000000000000000000000000000000000000000000000",
+  "decoded_outer_error": "MessageFailure(bytes32,bytes)",
+  "decoded_inner_error": "RaylsApp__PrivacyNodeFrozen(address)",
+  "decoded_token": "0x4878638dF091A638e0dF0E5D59E73F639f76499C",
+  "native_relayer_B": {
+    "tx_hash": "0xc18be24f8e7e75eeda3d07bd1ed0b3f86fcab8431d7f4de1d381d2871eb64389",
+    "tx_hash_destination": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "state": 10,
+    "outcome": "reverted",
+    "message_id": "578ff14fa9c5c41487b019b5ec84072ee40d6027bb337ec68596aee9434ff600",
+    "originator_chain_id": "12345",
+    "destination_chain_id": "12346",
+    "resource_id": "0x290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e563"
+  },
+  "no_destination_tx_hash_or_broadcast_observed": true,
+  "classification": "CTS pre-broadcast execution rejection, NOT mined destination revert"
+}

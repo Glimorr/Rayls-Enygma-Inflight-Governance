@@ -1,0 +1,12 @@
+{
+  "verification": "BATCH_HUB_CANONICAL_WITH_EXACT_NATIVE_REFERENCE",
+  "trial": 5,
+  "source_tx": "0x7bca50293ffbc361bb495b7801b37c8c152669db0cd116e77965c92ebd78c9e8",
+  "message_id": "0x0fb068b3cdd4d5b4c9a640714ee3642a77a779e24f8c3c7ed1168d7c559535c3",
+  "hub": {
+    "hash": "0x83d68b5edf475dfd644ea97a162f9606e017f0d5f734bcedbc4f279a9b1968e1",
+    "block": 23560,
+    "block_hash": "0xdebac1acaae440d9b9ded3c080865e395917e27a1a1eac7106191f497307439d",
+    "canonical": true
+  }
+}

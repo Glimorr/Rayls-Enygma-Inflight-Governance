@@ -22,6 +22,8 @@ jobs:
         run: |
           sha256sum --check EVIDENCE_SHA256SUMS.txt
           python3 verify_evidence.py
+          python3 verify_research.py
+          python3 test_verifier.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

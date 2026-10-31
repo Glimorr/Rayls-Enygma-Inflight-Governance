@@ -1,0 +1,57 @@
+{
+  "timestamp_utc": "2026-10-31T15:24:41.925005+00:00",
+  "classification": "measured Trial 2 of 6 FROZEN",
+  "sequential_order": [
+    "UNFROZEN",
+    "FROZEN",
+    "FROZEN",
+    "UNFROZEN",
+    "UNFROZEN",
+    "FROZEN"
+  ],
+  "source_chain": 12345,
+  "hub_chain": 1337,
+  "dest_chain": 12346,
+  "token": "W5S1031",
+  "resource_id": "0x290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e563",
+  "amount_wei": "1000000000000000000",
+  "source_user_nonce": 3,
+  "pre_state_balances_wei": {
+    "A": "18890000000000000000",
+    "B": "1110000000000000000"
+  },
+  "admin_nonces": {
+    "Hub_freeze": 237,
+    "Hub_unfreeze": 238,
+    "A_freeze": 183,
+    "A_unfreeze": 184,
+    "B_freeze": 179,
+    "B_unfreeze": 180
+  },
+  "steps": [
+    "stop only relayer B",
+    "submit once user transfer while unfrozen",
+    "prove canonical source and native-associated canonical Hub acceptance",
+    "apply canonical freeze Hub participants A/B, local Bank A, local Bank B",
+    "prove freeze is effective on Bank B mint path before release",
+    "restart same relayer B while freeze is active",
+    "observe destination transaction/relayer state while frozen with bounded window",
+    "unfreeze all three governance layers and verify restoration, without resending source transfer",
+    "audit exact destination outcome and balances"
+  ],
+  "observation_window_seconds": 45,
+  "measurement": {
+    "success": "matching Bank B executed message and exact token mint despite freeze",
+    "failed_execution": "matching Bank B transaction reverted on-chain",
+    "delayed": "no matching destination mint during freeze, possibly settles after unfreeze",
+    "indeterminate": "no canonical failed/successful receipt or reliable relayer record within window"
+  },
+  "recovery": "restore B relayer and governance flags even if intermediate step fails; no automatic source resend",
+  "excluded": [
+    "original stack",
+    "other trial transfers",
+    "changing preregistered order",
+    "claiming no B credit alone proves freeze"
+  ],
+  "trials_completed_before": 1
+}

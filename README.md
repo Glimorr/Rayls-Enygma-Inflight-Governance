@@ -36,6 +36,17 @@ Only three observations per condition were obtained. We cannot generalize to net
 Observed local Bank B freeze enforcement does not isolate the individual causal contribution of the Hub and Bank A flags.
 No full-history fresh destination event scan was conducted in this preparation stage.
 
+## Independent verification upgrade
+
+- **[Full methods, experimental lineage and boundaries](METHODS_AND_EVIDENCE.md)**
+- **[Claims and precise evidence limits](CLAIMS_AND_LIMITS.md)** — independent assertion-by-assertion audit and the legitimate team recovery question. — specific claim-to-receipt evidence, amendments, source and governance context.
+- **[15 raw payment receipts](evidence/RAW_TRIAL_CANONICAL_RECEIPTS.json)** with source/H/B blocks and logs.
+- **[18 canonical governance receipts](evidence/RAW_GOVERNANCE_CANONICAL_RECEIPTS.json)** for freeze/unfreeze at all three ledgers for Trials 2, 3 and 6.
+- **[Strong offline forensic verifier](verify_research.py)** checks receipt/block joins, source burns, destination mints, exact message IDs, governance actions, frozen timing and accounting.
+- **[Eight adversarial negative tests](test_verifier.py)** verify that forged or mismatched records fail closed.
+- **[Read-only live RPC checker](verify_live_chain.py)** can independently validate preserved data when the original isolated chain nodes are available.
+- **[Image and runtime provenance](evidence/SHADOW_RUNTIME_PROVENANCE_QA_SNAPSHOT.json)** includes Docker and Compose versions, image IDs, and honest source-to-binary limitations.
+
 ## Reproduction
 
 Run python3 verify_evidence.py from this directory to verify the indexed hashes and condition/accounting structure offline.

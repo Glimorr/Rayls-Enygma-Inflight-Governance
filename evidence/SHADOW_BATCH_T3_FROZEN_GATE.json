@@ -1,0 +1,25 @@
+{
+  "verification": "BATCH_ALL_THREE_FREEZES_ACTIVE_BEFORE_DESTINATION_RELEASE",
+  "trial": 3,
+  "message_id": "0x578ff14fa9c5c41487b019b5ec84072ee40d6027bb337ec68596aee9434ff600",
+  "states": {
+    "A_wei": "16890000000000000000",
+    "B_wei": "1110000000000000000",
+    "supplyA": "16890000000000000000",
+    "supplyB": "1110000000000000000",
+    "source_nonce": 5,
+    "hubA": true,
+    "hubB": true,
+    "pnA": 4,
+    "pnB": 4,
+    "hubStatusA": 4,
+    "hubStatusB": 2,
+    "b_head": 40013,
+    "admin_nonces": {
+      "H": 240,
+      "A": 186,
+      "B": 182
+    }
+  },
+  "expected_revert_selector": "0xcecb8d3c"
+}

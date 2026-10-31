@@ -1,0 +1,83 @@
+{
+  "captured_utc": "2026-10-31T18:42:36.123635+00:00",
+  "docker_version": "Docker version 29.9.2, build a82e528",
+  "docker_compose_version": "Docker Compose version v5.6.1",
+  "components": [
+    {
+      "service": "relayer-a",
+      "image_tag": "w5/relayer-a:b01b427",
+      "image_id": "sha256:94a69307c0d2f2e585af3f39a078cc617de0d0d5b4890602ebe872cae497f8b6",
+      "state": "running",
+      "health": "healthy"
+    },
+    {
+      "service": "relayer-b",
+      "image_tag": "w5/relayer-b:b01b427-fi",
+      "image_id": "sha256:16f5ed8fdd5541f210c9502716a995df29a1c3db0e473f8398e5fe3b461817a9",
+      "state": "running",
+      "health": "healthy"
+    },
+    {
+      "service": "cts-a",
+      "image_tag": "w5/cts:b01b427",
+      "image_id": "sha256:3e25142a67651d60eda3647e8e0faae78290106bb299b08088a0b507c041874f",
+      "state": "running",
+      "health": "healthy"
+    },
+    {
+      "service": "cts-b",
+      "image_tag": "w5/cts:b01b427",
+      "image_id": "sha256:3e25142a67651d60eda3647e8e0faae78290106bb299b08088a0b507c041874f",
+      "state": "running",
+      "health": "healthy"
+    },
+    {
+      "service": "pn-a",
+      "image_tag": "public.ecr.aws/w0k9o1t3/rayls-demo/rayls-privacy-axyl@sha256:375b0f88a3bdcdcaeed130b369c8f5ab618a737ddbb4525693b95c7440d8f1e6",
+      "image_id": "sha256:375b0f88a3bdcdcaeed130b369c8f5ab618a737ddbb4525693b95c7440d8f1e6",
+      "state": "running",
+      "health": "healthy"
+    },
+    {
+      "service": "pn-b",
+      "image_tag": "public.ecr.aws/w0k9o1t3/rayls-demo/rayls-privacy-axyl@sha256:375b0f88a3bdcdcaeed130b369c8f5ab618a737ddbb4525693b95c7440d8f1e6",
+      "image_id": "sha256:375b0f88a3bdcdcaeed130b369c8f5ab618a737ddbb4525693b95c7440d8f1e6",
+      "state": "running",
+      "health": "healthy"
+    },
+    {
+      "service": "private-hub",
+      "image_tag": "public.ecr.aws/w0k9o1t3/rayls-demo/rayls-private-network-hub@sha256:a5c7253880470f56a68803ea7c3836d374e8997a8b1baf88253fc9039ad4c953",
+      "image_id": "sha256:a5c7253880470f56a68803ea7c3836d374e8997a8b1baf88253fc9039ad4c953",
+      "state": "running",
+      "health": "healthy"
+    },
+    {
+      "service": "proofs-api",
+      "image_tag": "w5/gnark:be20e7f-k2",
+      "image_id": "sha256:fe432da6fe7b7cba318eeb8ad55cd6c0537a9e592dfef8af1de0f6c82bd344be",
+      "state": "running",
+      "health": "healthy"
+    },
+    {
+      "service": "postgres",
+      "image_tag": "postgres@sha256:0321e2252ebfeecb8bc1a899755084d29bce872953e1a5a3e25ec0860b739098",
+      "image_id": "sha256:0321e2252ebfeecb8bc1a899755084d29bce872953e1a5a3e25ec0860b739098",
+      "state": "running",
+      "health": "healthy"
+    },
+    {
+      "service": "nats",
+      "image_tag": "nats:2-alpine@sha256:76a3659dd4c61c32ab7d68c485e2ccb84861a5f1d7d6ba2f9be80b506d0ab7e6",
+      "image_id": "sha256:76a3659dd4c61c32ab7d68c485e2ccb84861a5f1d7d6ba2f9be80b506d0ab7e6",
+      "state": "running",
+      "health": "healthy"
+    }
+  ],
+  "pinned_revision_context": {
+    "cts_relayer_A": "b01b427 (image tag)",
+    "relayer_B": "b01b427-fi (modified research image, not unmodified official binary)",
+    "proofs": "be20e7f-k2 (image tag)"
+  },
+  "limitation": "Image tags and Docker image IDs observed after the experiment; no reproducible build or signed source-to-binary provenance attestation verified. These are not proof of original experiment wall-clock versions."
+}

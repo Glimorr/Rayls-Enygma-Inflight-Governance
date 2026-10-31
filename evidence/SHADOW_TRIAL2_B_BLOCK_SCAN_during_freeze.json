@@ -1,0 +1,12 @@
+{
+  "verification": "EXACT_MESSAGE_B_DESTINATION_BLOCK_SCAN",
+  "phase": "during_freeze",
+  "chain_id": 12346,
+  "source_message_id": "0x2ce134b7092c8717710be0076de7a975e3ae5ca33712cf2ae5c84a31b0e05572",
+  "source_hash": "0x5dcb97b1986f9a4d759ef638c1c05b606ecba905d20353a97bb551754b5c5670",
+  "B_frozen_receipt_block": 36649,
+  "B_chain_head_scanned": 36779,
+  "matching_transactions": [],
+  "match_count": 0,
+  "limitation": "Calldata matches exact source ID and expected endpoint selector; failed receipt has no success event logs. Any status0 is canonical execution revert, but revert reason must be corroborated separately."
+}

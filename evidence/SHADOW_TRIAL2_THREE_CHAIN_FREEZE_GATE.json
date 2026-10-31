@@ -1,0 +1,23 @@
+{
+  "verification": "TRIAL2_ALL_THREE_FROZEN_BEFORE_RELAY_RELEASE",
+  "source": "0x5dcb97b1986f9a4d759ef638c1c05b606ecba905d20353a97bb551754b5c5670",
+  "message_id": "0x2ce134b7092c8717710be0076de7a975e3ae5ca33712cf2ae5c84a31b0e05572",
+  "hub": {
+    "hash": "0xf4d4af8885c6ffa9a4682d2006f0b7419f13bfbdeb62109e7fd47aaed78a0d4f",
+    "block": 21017,
+    "block_hash": "0x3cbdcfe9f2117d3f024318b5753d304e618a3cac6c48c8361922b30b2c2387fa",
+    "receipt_status": 1
+  },
+  "states": {
+    "hub_frozen_A": true,
+    "hub_frozen_B": true,
+    "bank_A_pn": 4,
+    "bank_B_pn": 4,
+    "bank_A_hub": 4,
+    "bank_B_hub": 2,
+    "bank_A_balance_wei": "17890000000000000000",
+    "bank_B_balance_wei": "1110000000000000000",
+    "bank_B_head": 36665
+  },
+  "positive_revert_selector": "0xcecb8d3c"
+}

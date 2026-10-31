@@ -1,0 +1,11 @@
+{
+  "source_tx": "0x5dcb97b1986f9a4d759ef638c1c05b606ecba905d20353a97bb551754b5c5670",
+  "msg_id": "0x2ce134b7092c8717710be0076de7a975e3ae5ca33712cf2ae5c84a31b0e05572",
+  "originator_chain_id": "12345",
+  "destination_chain_id": "12346",
+  "batch_id": "4669664e-6ac4-4428-ab55-8c3ac1f3b7a1",
+  "batch_tx_hash_on_private_hub": "0xf4d4af8885c6ffa9a4682d2006f0b7419f13bfbdeb62109e7fd47aaed78a0d4f",
+  "transfer_metadata_amount": "1000000000000000000",
+  "resource_id": "0x290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e563",
+  "source": "live native relayer A database, not a substitute for canonical Hub receipt"
+}

@@ -1,15 +1,19 @@
-name: Verify evidence
+name: Verify experimental evidence
 on:
   push:
   pull_request:
 permissions:
   contents: read
 jobs:
-  verify:
+  forensic-verification:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check evidence integrity
+      - name: Verify SHA-256 manifest
         run: sha256sum --check EVIDENCE_SHA256SUMS.txt
-      - name: Check experimental outcomes
+      - name: Verify six-trial index and accounting
         run: python3 verify_evidence.py
+      - name: Verify raw receipt and event evidence
+        run: python3 verify_research.py
+      - name: Run eight adversarial tamper tests
+        run: python3 test_verifier.py
